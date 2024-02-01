@@ -144,11 +144,16 @@ stem(class_males)
     ##   8 | 6
 
 2.a answer:leaf and stem plots provide an alternative way to visualize data
-distribution, specially numerical, and have some advantagesfor it.
+distribution, specially numerical, and have some advantages for it.
 First, it shows with ease of representation due to its minimalist nature
 and simplicity. It also provides a graphical data in an ordered manner
 while retaining its original data, and in return, shows major digits of
-the value, making it easier to identify patterns and trend
+the value, making it easier to identify patterns and trend. With regards to
+the value, the distribution of grades of the female are secluded within the 40s
+to 80s marks, with the 70s score having the highest concentration. In accordance, 
+the scores of the male are more spread out from 30s to 80s, with most of them are 
+within the 50s grade, meaning the female acquired a relatively higher marks than
+the male
 
 ``` r
 #(b) boxplot and discuss the findings
