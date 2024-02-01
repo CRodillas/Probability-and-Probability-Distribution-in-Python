@@ -146,7 +146,7 @@ stem(class_males)
     ##   7 | 5
     ##   8 | 6
 
-answer:leaf and stem plots provide an alternative way to visualize data
+2.a answer:leaf and stem plots provide an alternative way to visualize data
 distribution, specially numerical, and have some advantagesfor it.
 First, it shows with ease of representation due to its minimalist nature
 and simplicity. It also provides a graphical data in an ordered manner
@@ -163,3 +163,6 @@ boxplot(data_list, main = "Java Programming Examination Scores of 50 student cla
 ```
 
 ![](RODILLAS_CHRISTIAN-MIGUEL-T.-FA1_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+
+
+#2.b answer: The boxplot is an effective way of communicating data that is more easier for interpretation and less of a hassle for people who are not aware of the numerized data. Through the used of boxplot, a graphical representation of the JAVA examination scores were provided which shows the grade distribution between male and female groups of the class. According to the graph, the female perfomed better with higher grade distribution and mean than the male. Among the female, the average score obtained were around the mark of 70, whilst the male had a lower grade distribution. with a mean grade of around 50. It is also worth to mention that the upper quartile of the male is comparable to the lower quartile of the female. In conclusion, for the programming examination, the female performed on a higher quality compared to the male group. 
