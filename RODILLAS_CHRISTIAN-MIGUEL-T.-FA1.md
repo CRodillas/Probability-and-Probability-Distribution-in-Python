@@ -123,8 +123,6 @@ stem(class_females)
     ## 
     ##   The decimal point is 1 digit(s) to the right of the |
     ## 
-    ##   0 | 7
-    ##   2 | 
     ##   4 | 13481569
     ##   6 | 058155889
     ##   8 | 01335
@@ -135,10 +133,7 @@ stem(class_males)
 
     ## 
     ##   The decimal point is 1 digit(s) to the right of the |
-    ## 
-    ##   0 | 8
-    ##   1 | 
-    ##   2 | 
+    ##
     ##   3 | 001257
     ##   4 | 122499
     ##   5 | 01113668
