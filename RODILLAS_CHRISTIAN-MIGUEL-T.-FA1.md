@@ -123,9 +123,11 @@ stem(class_females)
     ## 
     ##   The decimal point is 1 digit(s) to the right of the |
     ## 
-    ##   4 | 13481569
-    ##   6 | 058155889
-    ##   8 | 01335
+    ##  4 | 1348
+    ##  5 | 15679
+    ##  6 | 058
+    ##  7 | 155889
+    ##  8 | 01335
 
 ``` r
 stem(class_males)
