@@ -114,8 +114,8 @@ prog2_skewpack <- skewness(Results$prog2, na.rm = TRUE)
 #(a)
 #creating a vector for each gender and displaying stem and leaf plot
 
-class_females <- c(7, 59, 78, 79, 60, 65, 68, 71, 75, 48, 51, 55, 56, 41, 43, 44, 75, 78, 80, 81, 83, 83, 85)
-class_males <- c(8, 49, 49, 30, 30, 31, 32, 35, 37, 41, 86, 42, 51, 53, 56,42, 44, 50, 51, 65, 67, 51, 56, 58, 64, 64, 75)
+class_females <- c(57, 59, 78, 79, 60, 65, 68, 71, 75, 48, 51, 55, 56, 41, 43, 44, 75, 78, 80, 81, 83, 83, 85)
+class_males <- c(48, 49, 49, 30, 30, 31, 32, 35, 37, 41, 86, 42, 51, 53, 56,42, 44, 50, 51, 65, 67, 51, 56, 58, 64, 64, 75)
 
 stem(class_females)
 ```
