@@ -22,13 +22,13 @@ text(x = which(names(side_list) == "One each"), y = side_list[["One each"]], lab
 ```
 
 ![](RODILLAS,-CHRISTIAN-MIGUEL-T.-FA-2_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
-Experiment Result: Relative Frequency HH 30 TT 25 HT 45 This shows the
+Experiment Result: Relative Frequency HH 27 TT 20 HT 53 This shows the
 probability of getting exactly one head and one tail, regardless of
 their position. It is considerably larger probability compared to the
 two since it combines the probability of the sets {TH,HT}
 
 Therefore, based on the experiment, the probability of getting one each
-is 45%
+is 53%
 
 3.  An experiment consists of rolling a die. Use R to simulate this
     experiment 600 times and obtain the relative frequency of each
@@ -59,5 +59,5 @@ Result:
 The figure above shows the relative frequency of obtaining each side of
 a fair dice after 600 rolls. Using the formula to obtain the
 probability, the estimated probability of each side are as follows: 1 =
-.18 or 18% 2 = .167 or 16.7% 3 = .177 or 17.7% 4 = .16 or 16% 5 = .13 or
-13% 6 = .185 or 18.5%
+.14 or 14% 2 = .185 or 18.5% 3 = .178 or 17.8% 4 = .175 or 17.5% 5 = .15 or
+15% 6 = .17 or 17%
