@@ -22,7 +22,7 @@ text(x = which(names(side_list) == "One each"), y = side_list[["One each"]], lab
 ```
 
 ![](RODILLAS,-CHRISTIAN-MIGUEL-T.-FA-2_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
-Experiment Result: Relative Frequency HH 27 TT 20 HT 53 This shows the
+Relative Frequency HH 27 TT 20 HT 53 This shows the
 probability of getting exactly one head and one tail, regardless of
 their position. It is considerably larger probability compared to the
 two since it combines the probability of the sets {TH,HT}
@@ -54,7 +54,6 @@ text(x = 1:6, y = count_list + 5, label = count_list, pos = , col = "blue", cex 
 ```
 
 ![](RODILLAS,-CHRISTIAN-MIGUEL-T.-FA-2_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
-Result:
 
 The figure above shows the relative frequency of obtaining each side of
 a fair dice after 600 rolls. Using the formula to obtain the
