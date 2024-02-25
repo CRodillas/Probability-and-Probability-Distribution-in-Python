@@ -74,3 +74,5 @@ barplot(percentage_rate_error, col = c("skyblue", "pink", "orange"), ylim = c(0,
 ```
 
 ![](RODILLAS,-CHRISTIAN-MIGUEL-T.-FA-3_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+Amy is the most likely to have written the error code at 1.5%
