@@ -1,0 +1,80 @@
+---
+title: "Rodillas FA 7"
+output: github_document
+date: "2024-02-29"
+---
+1. With lambda = 4 per minute, we can obtain the probability based on time 
+```{r}
+#1. With lambda = 4 per minute, we can obtain the probability based on time 
+lambda1 <- 4  
+
+#at most 15
+p_at_15 <- 1 -exp(-lambda1/60 * 0.25)
+cat("P(T ≤ 0.25) =", p_at_15 *100, "% \n")
+
+# greater than 30
+p_more_30 <- exp(-lambda1/60 * 0.5)
+cat("P(T > 0.5) =",p_more_30 *100, "%\n")
+
+# 15 to a minute
+p_15_60 <- exp(-lambda1/60 * 0.25) - exp(-lambda1/60 * 1)
+cat("P(0.25 < T < 1) =",p_15_60 *100, "%\n")
+
+```
+
+
+
+3. average job comp center is 2 per minute, with Poisson
+
+```{r}
+#Using the ppois
+
+# aveage rate job per min
+lambda2 <- 2 
+
+# (a) more than 2 jobs, 1 min
+p_2_in_1 <- 1 - ppois(2, lambda2)
+cat("The probability of having more than 2 jobs in one minute: ",p_2_in_1 *100, "% \n")
+
+# (b) 30 sec interval, 2 jobs
+p_30_between_2 <- ppois(1, lambda2/2)
+cat("The probability of having an interval of at least 30 seconds in two jobs: ",p_30_between_2 *100, "%\n")
+
+# less than 30 sec interval, 2 jobs
+p_30less_between_2 <- 1 -p_30_between_2
+cat("The probability of having less than 30 seconds interval in two jobs: ",p_30less_between_2 *100, "%\n")
+
+# (d) job after 30, where 30 has no job
+p_30_after_30 <- 1 - exp(-lambda2/2)
+cat("The probability that a job will arrive in the next 30 seconds, after 30 seconds of nothing: ", p_30_after_30 *100, "%\n")
+
+```
+
+
+
+7. With an ave of 15 visits per hr, using Poisson, find the probability
+```{r}
+#7. With an ave of 15 visits per hr, using Poisson, find the probability 
+
+lambda3 <- 15
+
+# (a) 10 minutes will elapse without a visit
+lambda_min <- lambda3/6 #since 1 hr has 60 mins, divide the time per 10 mins
+p_novisit_10 <- ppois(0, lambda_min) 
+cat("The probability that at least 10 minutes will elapse without a visit: ",  p_novisit_10 *100, "% \n")
+
+# (b) ! hr, <8 visits 
+p_hour_lessthan8 <- ppois(7, lambda3)
+cat("Probability that in any hour, there will be less than eight visits: ",p_hour_lessthan8 *100, "% \n")
+
+# (c)A visit after 15 mins, where 15 have elapsed
+lambda_min2 <- lambda3/4 #convert hour. With 60 mins / 4 is 15 mins
+p_15_after_15 <- 1 - ppois(0, lambda_min2)  
+cat("Probability that a visit will occur in the next 15 minutes:", p_15_after_15 *100, "% \n")
+
+# (d) top quartile
+top_quartile <- qpois(0.75, lambda3)
+cat("Top quartile (number of visits):", top_quartile)
+```
+
+The top quartile represents the top 75% of data falls under. In the case of this problem, the top quartile are the number of visits which falls under the time elapsed. In this case, there are 18 visits per hour in the top quartile, meaning that 75% of the time, there are 5 visits or lower in the website.  
