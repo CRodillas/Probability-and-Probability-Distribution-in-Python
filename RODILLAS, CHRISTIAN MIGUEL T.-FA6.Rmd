@@ -1,0 +1,49 @@
+---
+title: "Rodillas FA 6"
+output: github_document
+date: "2024-02-29"
+---
+Geometric Distribution
+```{r}
+p_success <- 0.2
+x <- rgeom(1000, p_success)
+
+mean_x <- mean(x)
+var_x <- var(x)
+sd_x <- sd(x)
+first_success <- which.min(x)
+
+cat("Number of trials required to have first success: ", first_success, "\n")
+cat("Mean (in 2 decimal places): ", round((mean_x),2), "\n")
+cat("Variance (in 2 decimal places): ", round((var_x),2), "\n")
+cat("Standard Deviation (in 2 decimal places): ", round((sd_x),2), "\n")
+
+
+
+
+```
+Plot the histogram:
+```{r}
+hist(x, main = "Geometric Distribution Results", xlab = "Number of Trials", ylab = "Frequency of Occurence", breaks = 20, col="lightgreen")
+```
+
+##Hypergeometric Distribution
+```{r}
+#Probability of getting more than 10% defective, 
+#in this case, atleast 1 defective in 10 grabs
+
+Nbox1 <- 40       
+Def <- 0.1 * Nbox1  
+sample <- 10      
+
+# Probability of getting more than 10% defectives
+box_of_40 <- 1 - phyper(0.1 * sample, Def, Nbox1 - Def, sample)
+cat("The probability of getting more than 10% defects in a box of 40 is: ", box_of_40*100,"%\n")
+
+#Probaiblity in box of 5000
+Nbox2 <- 5000
+Def2 <- 0.1 *Nbox2
+box_of_5000 <- 1 - phyper(0.1 * sample, Def2, Nbox2 - Def2, sample)
+cat("The probability of getting more than 10% defects in a box of 5000 is: ", box_of_5000*100,"%\n")
+```
+
